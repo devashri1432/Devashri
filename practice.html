@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Practice</title>
+     <style>
+          *{
+               box-sizing: border-box;
+          }
+          h1{
+               color: palevioletred;
+               text-align: center;
+               text-decoration: underline;
+               font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               margin-bottom: 35px;
+               margin-top: 10px;
+          }
+          .title{
+               background-color:lightblue;
+               width: fit-content;
+               height: fit-content;
+               float: right;
+               border: royalblue 2px solid;
+          }
+          .content{
+               text-align: justify;
+               font-family: 'Times New Roman', Times, serif;
+               padding-top: 35px;
+               margin: 5px;
+              
+          }
+          .column{
+               width: 33.33%;
+               float: left;
+               background-color: lightsalmon;
+               border: purple 2px solid;
+               
+               
+          }
+          row::after{
+               display: table;
+               clear: both;
+               content:"";
+          }
+          @media screen and (max-width: 992px) {
+              .column{
+               width: 50%;
+              }
+               
+          }
+          @media screen and (max-width: 600px) {
+              .column{
+               width: 100%;
+              }
+               
+          }
+     </style>
+</head>
+<body>
+     <h1>Our Content!!</h1>
+     <div class="row">
+          <div class="column" >
+               <section class="title">Block-1</section>
+               <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi delectus nobis amet voluptate sapiente neque nihil voluptas fuga dolorum dicta maiores eius omnis in at quae debitis, est assumenda.
+               </p>
+
+          </div>
+          <div class="column" >
+               <section class="title">Block-2</section>
+               <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi delectus nobis amet voluptate sapiente neque nihil voluptas fuga dolorum dicta maiores eius omnis in at quae debitis, est assumenda.
+               </p>
+
+          </div>
+          <div class="column" >
+               <section class="title">Block-3</section>
+               <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi delectus nobis amet voluptate sapiente neque nihil voluptas fuga dolorum dicta maiores eius omnis in at quae debitis, est assumenda.
+               </p> 
+              
+
+          </div>
+
+     </div>
+</body>
+</html>
